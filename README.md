@@ -50,12 +50,12 @@ By default, the system starts with a sample ticket:
 ```
 
 The agent will:
-  -> Classify the ticket 
-  -> Retrieve relevant policy context
-  -> Generate a draft reply
-  -> Review the reply using Ollama
-  -> Retry if rejected (up to 2 times)
-  -> Escalate and log if still rejected
+  - > Classify the ticket 
+  - > Retrieve relevant policy context
+  - > Generate a draft reply
+  - > Review the reply using Ollama
+  - > Retry if rejected (up to 2 times)
+  - > Escalate and log if still rejected
 
 For Demo Purposes
   Force Approval:
@@ -78,11 +78,11 @@ If the response is rejected after all retries, the rejected draft is logged to:
 ```
 
 CSV Columns:
-  -> timestamp
-  -> subject
-  -> description
-  -> failed_draft
-  -> review_feedback
+  - > timestamp
+  - > subject
+  - > description
+  - > failed_draft
+  - > review_feedback
 
 Project Structure
 ```bash
@@ -100,12 +100,12 @@ Project Structure
 ```
 
 Notes & Limitations
-  -> Requires Ollama running locally with llama3 model (ollama run llama3)
-  -> If the langchain_ollama package is missing, install via:
+  - > Requires Ollama running locally with llama3 model (ollama run llama3)
+  - > If the langchain_ollama package is missing, install via:
 ```bash
 pip install langchain-ollama
 ```
 
-Author
-Built by M. Asfand Raza | GitHub: @yourusername
+
+Built by M. Asfand Raza | GitHub: https://github.com/masfandraza
 
